@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E67F191274E4F8C0050177A /* MelonberryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67F190274E4F8C0050177A /* MelonberryApp.swift */; };
+		6E67F193274E4F8C0050177A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67F192274E4F8C0050177A /* ContentView.swift */; };
+		6E67F195274E4F910050177A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E67F194274E4F910050177A /* Assets.xcassets */; };
+		6E67F198274E4F910050177A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E67F197274E4F910050177A /* Preview Assets.xcassets */; };
+		6E67F1A2274E4F920050177A /* MelonberryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67F1A1274E4F920050177A /* MelonberryTests.swift */; };
+		6E67F1AC274E4F920050177A /* MelonberryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67F1AB274E4F920050177A /* MelonberryUITests.swift */; };
+		6E67F1AE274E4F920050177A /* MelonberryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67F1AD274E4F920050177A /* MelonberryUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E67F19E274E4F920050177A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E67F185274E4F8C0050177A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E67F18C274E4F8C0050177A;
+			remoteInfo = Melonberry;
+		};
+		6E67F1A8274E4F920050177A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E67F185274E4F8C0050177A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E67F18C274E4F8C0050177A;
+			remoteInfo = Melonberry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E67F18D274E4F8C0050177A /* Melonberry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melonberry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E67F190274E4F8C0050177A /* MelonberryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonberryApp.swift; sourceTree = "<group>"; };
+		6E67F192274E4F8C0050177A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6E67F194274E4F910050177A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E67F197274E4F910050177A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E67F19D274E4F920050177A /* MelonberryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelonberryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E67F1A1274E4F920050177A /* MelonberryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonberryTests.swift; sourceTree = "<group>"; };
+		6E67F1A7274E4F920050177A /* MelonberryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelonberryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E67F1AB274E4F920050177A /* MelonberryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonberryUITests.swift; sourceTree = "<group>"; };
+		6E67F1AD274E4F920050177A /* MelonberryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelonberryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E67F18A274E4F8C0050177A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E67F19A274E4F920050177A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E67F1A4274E4F920050177A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E67F184274E4F8C0050177A = {
+			isa = PBXGroup;
+			children = (
+				6E67F18F274E4F8C0050177A /* Melonberry */,
+				6E67F1A0274E4F920050177A /* MelonberryTests */,
+				6E67F1AA274E4F920050177A /* MelonberryUITests */,
+				6E67F18E274E4F8C0050177A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E67F18E274E4F8C0050177A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E67F18D274E4F8C0050177A /* Melonberry.app */,
+				6E67F19D274E4F920050177A /* MelonberryTests.xctest */,
+				6E67F1A7274E4F920050177A /* MelonberryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E67F18F274E4F8C0050177A /* Melonberry */ = {
+			isa = PBXGroup;
+			children = (
+				6E67F190274E4F8C0050177A /* MelonberryApp.swift */,
+				6E67F192274E4F8C0050177A /* ContentView.swift */,
+				6E67F194274E4F910050177A /* Assets.xcassets */,
+				6E67F196274E4F910050177A /* Preview Content */,
+			);
+			path = Melonberry;
+			sourceTree = "<group>";
+		};
+		6E67F196274E4F910050177A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6E67F197274E4F910050177A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E67F1A0274E4F920050177A /* MelonberryTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E67F1A1274E4F920050177A /* MelonberryTests.swift */,
+			);
+			path = MelonberryTests;
+			sourceTree = "<group>";
+		};
+		6E67F1AA274E4F920050177A /* MelonberryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E67F1AB274E4F920050177A /* MelonberryUITests.swift */,
+				6E67F1AD274E4F920050177A /* MelonberryUITestsLaunchTests.swift */,
+			);
+			path = MelonberryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E67F18C274E4F8C0050177A /* Melonberry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E67F1B1274E4F920050177A /* Build configuration list for PBXNativeTarget "Melonberry" */;
+			buildPhases = (
+				6E67F189274E4F8C0050177A /* Sources */,
+				6E67F18A274E4F8C0050177A /* Frameworks */,
+				6E67F18B274E4F8C0050177A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Melonberry;
+			productName = Melonberry;
+			productReference = 6E67F18D274E4F8C0050177A /* Melonberry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E67F19C274E4F920050177A /* MelonberryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E67F1B4274E4F920050177A /* Build configuration list for PBXNativeTarget "MelonberryTests" */;
+			buildPhases = (
+				6E67F199274E4F920050177A /* Sources */,
+				6E67F19A274E4F920050177A /* Frameworks */,
+				6E67F19B274E4F920050177A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E67F19F274E4F920050177A /* PBXTargetDependency */,
+			);
+			name = MelonberryTests;
+			productName = MelonberryTests;
+			productReference = 6E67F19D274E4F920050177A /* MelonberryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E67F1A6274E4F920050177A /* MelonberryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E67F1B7274E4F920050177A /* Build configuration list for PBXNativeTarget "MelonberryUITests" */;
+			buildPhases = (
+				6E67F1A3274E4F920050177A /* Sources */,
+				6E67F1A4274E4F920050177A /* Frameworks */,
+				6E67F1A5274E4F920050177A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E67F1A9274E4F920050177A /* PBXTargetDependency */,
+			);
+			name = MelonberryUITests;
+			productName = MelonberryUITests;
+			productReference = 6E67F1A7274E4F920050177A /* MelonberryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E67F185274E4F8C0050177A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					6E67F18C274E4F8C0050177A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					6E67F19C274E4F920050177A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 6E67F18C274E4F8C0050177A;
+					};
+					6E67F1A6274E4F920050177A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 6E67F18C274E4F8C0050177A;
+					};
+				};
+			};
+			buildConfigurationList = 6E67F188274E4F8C0050177A /* Build configuration list for PBXProject "Melonberry" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E67F184274E4F8C0050177A;
+			productRefGroup = 6E67F18E274E4F8C0050177A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E67F18C274E4F8C0050177A /* Melonberry */,
+				6E67F19C274E4F920050177A /* MelonberryTests */,
+				6E67F1A6274E4F920050177A /* MelonberryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E67F18B274E4F8C0050177A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E67F198274E4F910050177A /* Preview Assets.xcassets in Resources */,
+				6E67F195274E4F910050177A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E67F19B274E4F920050177A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E67F1A5274E4F920050177A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E67F189274E4F8C0050177A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E67F193274E4F8C0050177A /* ContentView.swift in Sources */,
+				6E67F191274E4F8C0050177A /* MelonberryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E67F199274E4F920050177A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E67F1A2274E4F920050177A /* MelonberryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E67F1A3274E4F920050177A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E67F1AC274E4F920050177A /* MelonberryUITests.swift in Sources */,
+				6E67F1AE274E4F920050177A /* MelonberryUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E67F19F274E4F920050177A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E67F18C274E4F8C0050177A /* Melonberry */;
+			targetProxy = 6E67F19E274E4F920050177A /* PBXContainerItemProxy */;
+		};
+		6E67F1A9274E4F920050177A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E67F18C274E4F8C0050177A /* Melonberry */;
+			targetProxy = 6E67F1A8274E4F920050177A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E67F1AF274E4F920050177A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E67F1B0274E4F920050177A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E67F1B2274E4F920050177A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Melonberry/Preview Content\"";
+				DEVELOPMENT_TEAM = 2N4R5B4T68;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vaclmat.Melonberry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E67F1B3274E4F920050177A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Melonberry/Preview Content\"";
+				DEVELOPMENT_TEAM = 2N4R5B4T68;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vaclmat.Melonberry;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E67F1B5274E4F920050177A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N4R5B4T68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vaclmat.MelonberryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Melonberry.app/Melonberry";
+			};
+			name = Debug;
+		};
+		6E67F1B6274E4F920050177A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N4R5B4T68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vaclmat.MelonberryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Melonberry.app/Melonberry";
+			};
+			name = Release;
+		};
+		6E67F1B8274E4F920050177A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N4R5B4T68;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vaclmat.MelonberryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Melonberry;
+			};
+			name = Debug;
+		};
+		6E67F1B9274E4F920050177A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2N4R5B4T68;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vaclmat.MelonberryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Melonberry;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E67F188274E4F8C0050177A /* Build configuration list for PBXProject "Melonberry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E67F1AF274E4F920050177A /* Debug */,
+				6E67F1B0274E4F920050177A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E67F1B1274E4F920050177A /* Build configuration list for PBXNativeTarget "Melonberry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E67F1B2274E4F920050177A /* Debug */,
+				6E67F1B3274E4F920050177A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E67F1B4274E4F920050177A /* Build configuration list for PBXNativeTarget "MelonberryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E67F1B5274E4F920050177A /* Debug */,
+				6E67F1B6274E4F920050177A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E67F1B7274E4F920050177A /* Build configuration list for PBXNativeTarget "MelonberryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E67F1B8274E4F920050177A /* Debug */,
+				6E67F1B9274E4F920050177A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E67F185274E4F8C0050177A /* Project object */;
+}
