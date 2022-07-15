@@ -5,16 +5,9 @@
 //  Created by Václav Matoušek on 02.12.2021.
 //
 
-import SwiftUI
+import Foundation
 
-struct Log_in: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Log_in: Codable {
+var username: String
+var password: String
     }
-}
-
-struct Log_in_Previews: PreviewProvider {
-    static var previews: some View {
-        Log_in()
-    }
-}
