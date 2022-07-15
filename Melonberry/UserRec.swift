@@ -5,16 +5,37 @@
 //  Created by Václav Matoušek on 09.12.2021.
 //
 
-import SwiftUI
+import Foundation
 
-struct UserRec: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct UserRec: Codable, Equatable {
+    let id: Int
+    var name: String
+    let url: String
+    let description: String
+    let link: String
+    var slug: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case url
+        case description
+        case link
+        case slug
     }
-}
-
-struct UserRec_Previews: PreviewProvider {
-    static var previews: some View {
-        UserRec()
-    }
-}
+    
+    init(id: Int? = 0,
+         name: String? = "",
+         url: String? = "",
+         description: String? = "",
+         link: String? = "",
+         slug: String? = ""
+    ) {
+        
+        self.id = id!
+        self.name = name!
+        self.url = url!
+        self.description = description!
+        self.link = link!
+        self.slug = slug!
+    }}

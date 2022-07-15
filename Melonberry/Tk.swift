@@ -5,16 +5,12 @@
 //  Created by Václav Matoušek on 02.12.2021.
 //
 
-import SwiftUI
+import Foundation
 
-struct Tk: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct Tk_Previews: PreviewProvider {
-    static var previews: some View {
-        Tk()
-    }
+struct Tk: Codable {
+    let success: Bool
+    let statusCode: Int
+    let code: String
+    let message: String
+    let data: Datastruc
 }

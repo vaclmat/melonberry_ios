@@ -6,11 +6,28 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct NavodyChildView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var mediaresult: VnalStore
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.blue
+            NavigationStackView {
+            List(mediaresult.vnals) { su in
+                PushView(destination: VideoView(tsurl: su.linktv)
+                        .navigationBarTitle("Videa", displayMode: .inline)
+                        .navigationViewStyle(StackNavigationViewStyle()))
+                 {
+                     Text(su.videoname)
+                        .bold()
+                }
+            }
+            .listStyle(GroupedListStyle())
+        }
     }
+}
 }
 
 struct NavodyChildView_Previews: PreviewProvider {

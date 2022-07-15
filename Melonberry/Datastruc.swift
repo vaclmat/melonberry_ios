@@ -5,16 +5,14 @@
 //  Created by Václav Matoušek on 02.12.2021.
 //
 
-import SwiftUI
+import Foundation
 
-struct Datastruc: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct Datastruc_Previews: PreviewProvider {
-    static var previews: some View {
-        Datastruc()
-    }
+struct Datastruc: Codable {
+let token: String
+let id: Int
+let email: String
+let nicename: String
+let firstName: String
+let lastName: String
+let displayName: String
 }
