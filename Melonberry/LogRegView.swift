@@ -10,6 +10,12 @@ import Alamofire
 import SwiftKeychainWrapper
 import JWTDecode
 
+struct Constants {
+    
+    static let web_url: String = "https://www.melonberry-weby.cz/"
+    
+}
+
 struct LogRegView: View {
     @State var isLoginActive = false
     @State var isRegActive = false
@@ -56,7 +62,7 @@ struct LogRegView: View {
 //                print(logins)
                 let headers: HTTPHeaders = ["Accept":"application/json",
                      "Content-Type":"application/json"]
-                AF.request("http://melonberry.local/wp-json/jwt-auth/v1/token",
+                        AF.request(Constants.web_url + "wp-json/jwt-auth/v1/token",
                            method: .post,
                            parameters: logins,
                            encoder: JSONParameterEncoder.default,

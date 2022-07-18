@@ -80,7 +80,7 @@ struct ContentView: View {
                     isNavodyLinkActive = true
                     let rtoken: String? = KeychainWrapper.standard.string(forKey: "token")
                     let ruser: String? = KeychainWrapper.standard.string(forKey: "user")
-                    let rurl: URLConvertible = "http://melonberry.local/wp-json/mo/v1/vip/" + ruser!
+                    let rurl: URLConvertible = Constants.web_url +  "wp-json/mo/v1/vip/" + ruser!
                     let headersr: HTTPHeaders = ["Accept":"application/json",
                      "Content-Type":"application/json", "Authorization": "Bearer " + rtoken!]
                     AF.request(rurl,
@@ -91,9 +91,10 @@ struct ContentView: View {
                             switch response.result {
                             case .success(let mediastr): do {
                                 mesus.vips = mediastr
+                                print(mesus.vips)
                                 var avnal:[VnalRec] = []
                                 for rvid in mesus.vips {
-                                    let rvurl: URLConvertible = "http://melonberry.local/wp-json/mo/v1/vnal/" + rvid.vid
+                                    let rvurl: URLConvertible = Constants.web_url +  "wp-json/mo/v1/vn/" + rvid.vid
                                     AF.request(rvurl,
                                             method: .get,
                                             headers: headersr
@@ -105,13 +106,13 @@ struct ContentView: View {
                                                 self.vnalus.vnals = avnal
                                             }
                                             case .failure( let vnalerr): do {
-                                                alertmsg = "Ziskani dat selhalo."
+                                                alertmsg = "Ziskani dat z vn selhalo."
                                                 print(vnalerr)
                                                 ashA = true
                                             }}}}
                                 }
                             case .failure( let mediaerr): do {
-                                alertmsg = "Ziskani dat selhalo."
+                                alertmsg = "Ziskani dat z vip selhalo."
                                 print(mediaerr)
                                 ashA = true
                             }}}},
@@ -120,7 +121,7 @@ struct ContentView: View {
                 Text("Navody")
             })
             .alert(isPresented: self.$ashA, content: {
-                Alert(title: Text( "Zpráva ze stránky Registrace uživatele"), message: Text(alertmsg),
+                Alert(title: Text( "Zpráva ze stránky Navody"), message: Text(alertmsg),
                       dismissButton: .cancel())
             })
     }}}
@@ -139,7 +140,7 @@ struct ContentView: View {
                     let rtoken: String? = KeychainWrapper.standard.string(forKey: "token")
                     let headersr: HTTPHeaders = ["Accept":"application/json",
                      "Content-Type":"application/json", "Authorization": "Bearer " + rtoken!]
-                    AF.request("http://melonberry.local/wp-json/wp/v2/users/me",
+                    AF.request(Constants.web_url + "wp-json/wp/v2/users/me",
                             method: .get,
                             headers: headersr
                     ).responseDecodable(of: UserRec.self)  {

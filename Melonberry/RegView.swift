@@ -144,7 +144,7 @@ struct RegView: View {
                         print(logins)
                         let headers: HTTPHeaders = ["Accept":"application/json",
                              "Content-Type":"application/json"]
-                        AF.request("http://melonberry.local/wp-json/jwt-auth/v1/token",
+                        AF.request(Constants.web_url + "wp-json/jwt-auth/v1/token",
                                    method: .post,
                                    parameters: logins,
                                    encoder: JSONParameterEncoder.default,
@@ -167,7 +167,7 @@ struct RegView: View {
                         let rtoken: String? = KeychainWrapper.standard.string(forKey: "token")
                         let headersr: HTTPHeaders = ["Accept":"application/json",
                          "Content-Type":"application/json", "Authorization": "Bearer " + rtoken!]
-                        let addp = Wp_user(username: rusername, first_name: rfirst_name, last_name: rlast_name, email: remail, roles: "subscriber", password: rpassword);                        AF.request("http://melonberry.local/wp-json/wp/v2/users",
+                        let addp = Wp_user(username: rusername, first_name: rfirst_name, last_name: rlast_name, email: remail, roles: "subscriber", password: rpassword);                        AF.request(Constants.web_url + "wp-json/wp/v2/users",
                                method: .post,
                                parameters: addp,
                                encoder: JSONParameterEncoder.default,
