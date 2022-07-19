@@ -91,7 +91,6 @@ struct ContentView: View {
                             switch response.result {
                             case .success(let mediastr): do {
                                 mesus.vips = mediastr
-                                print(mesus.vips)
                                 var avnal:[VnalRec] = []
                                 for rvid in mesus.vips {
                                     let rvurl: URLConvertible = Constants.web_url +  "wp-json/mo/v1/vn/" + rvid.vid
