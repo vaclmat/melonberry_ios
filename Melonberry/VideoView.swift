@@ -8,16 +8,17 @@
 import SwiftUI
 import AVKit
 import youtube_ios_player_helper
+import YoutubePlayer_in_WKWebView
 
 struct YTWrapper : UIViewRepresentable {
-    func updateUIView(_ uiView: YTPlayerView, context: Context) {
+    func updateUIView(_ uiView: WKYTPlayerView, context: Context) {
         //
     }
     
     var videoID: String
     
-    func makeUIView(context: Context) -> YTPlayerView {
-        let playerView = YTPlayerView()
+    func makeUIView(context: Context) -> WKYTPlayerView {
+        let playerView = WKYTPlayerView()
         playerView.load(withVideoId: videoID)
         return playerView
     }
